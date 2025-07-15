@@ -1,0 +1,42 @@
+Cahier des charges : variante avec API
+
+Conditions d’achèvement
+Nous livrons des pizzas, et nous disposons déjà d’un site permettant de choisir des pizzas, 
+des produits complémentaires (desserts, boissons, …) et de gérer le passage et le paiement de la commande.
+
+Nous lançons une offre de pizza sur mesure.
+
+Les clients pourront choisir :
+la taille (petite, grande, moyenne)
+le type de pâte (épaisse ou fine)
+la base (tomate ou crème)
+les ingrédients
+
+Bien sûr, nous souhaitons pouvoir gérer dans une base de données les choix à chaque étape (avec la description détaillée, le prix, une photo….)
+
+Nous souhaitons que nos clients puissent composer leur pizza sur mesure de manière très simple et très active, sur une seule page, avec :
+l’élaboration étape par étape
+le récapitulatif de la pizza en cours d’élaboration, avec les photos et le prix
+le détail de chaque choix lorsqu’on clique sur l’élément
+la possibilité à tout moment de changer un choix (taille, type, base, ingrédients…)
+Si l’internaute interrompt sa session et revient, nous souhaitons qu’il retrouve la pizza en cours d’élaboration.
+
+Lorsque tout est choisi (avec au moins deux ingrédients), un bouton « commander » permet de finaliser la commande : pour cela, 
+vous devez enregistrer la pizza composée dans la base de données, et rediriger le client sur la page de commande, 
+c’est à dire sur l’url https://api.mywebecom.ovh/play/mypizza/order.php, 
+en passant en paramètre "id" de l'URL la clé primaire de la pizza dans la base de données. 
+Nous gérons nous même cette URL et la suite du processus dans notre application existante.
+
+Le prix est constitué d'un prix fixe qui dépend de la taille, incluant la pâte (quel que soit le type), 
+la base, et au maximum 3 ingrédients au choix. Chaque ingrédient supplémentaire augment le prix de 
+la valeur du supplément indiqué (le supplément est le même quelle que soit la taille).
+
+Pour récupérer les informations de prix et les options, vous disposez d'API qui retournent des fichiers JSON.
+
+La structure de ces fichiers est explicite.
+
+https://api.mywebecom.ovh/play/mypizza/prix : informations sur les prix
+https://api.mywebecom.ovh/play/mypizza/bases : détail des bases disponibles
+https://api.mywebecom.ovh/play/mypizza/tailles : détail des tailles disponibles
+https://api.mywebecom.ovh/play/mypizza/pates : détail des types de pâtes disponibles
+https://api.mywebecom.ovh/play/mypizza/ingredients : détail des ingrédients disponibles

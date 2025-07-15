@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+
+.taille{
+    .container-card-taille{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+}
+
+.pate{
+    .container-card-pate{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+}
+
+.base{
+    .container-card-base{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+}
+
+.ingredients{
+    .container-card-ingredient{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-top: 1rem;
+    }
+}

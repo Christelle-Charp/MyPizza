@@ -1,0 +1,49 @@
+.containerModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+
+    .cta-closed {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+
+        .btn-closed {
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        }
+    }
+
+    .header-popup {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .body-popup {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        max-width: 500px;
+        text-align: center;
+
+        img {
+            max-width: 200px;
+            border-radius: 8px;
+        }
+    }
+}

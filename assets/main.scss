@@ -1,0 +1,48 @@
+// 1️⃣ Import des variables et mixins
+@use "../assets/abstracts/variables" as *;
+@use "../assets/abstracts/mixins" as *;
+@use "../assets/abstracts/functions" as *;
+@use "../assets/abstracts/placeholders" as *;
+@use "../assets/abstracts/colors" as *;
+@use "../assets/abstracts/typography" as *;
+
+// 2️⃣ Import des bases
+@use "../assets/base/reset" as *;
+@use "../assets/base/global" as *;
+@use '../assets/base/reset-typography' as *;
+
+// 3️⃣ Import des layouts
+@use "../assets/layout/footer" as *;
+@use "../assets/layout/header" as *;
+@use "../assets/layout/section" as *;
+
+
+// 4️⃣ Import des composants
+@use "../assets/components/buttons/icons" as *;
+@use "../assets/components/buttons/primary" as *;
+@use "../assets/components/buttons/secondary" as *;
+@use "../assets/components/modals/modal" as *;
+@use "../assets/components/cards/card-taille" as *;
+@use "../assets/components/cards/card-pate" as *;
+@use "../assets/components/cards/card-base" as *;
+@use "../assets/components/cards/card-ingredient" as *;
+@use "../assets/components/cards/card-ingredient-choisi" as *;
+
+// 5️⃣ Import des pages spécifiques
+@use "../assets/pages/about";
+@use "../assets/pages/blog";
+@use "../assets/pages/contact";
+@use "../assets/pages/home";
+@use "../assets/pages/page404";
+@use "../assets/pages/recap-pizza";
+
+// 6️⃣ Import des thèmes
+@use "../assets/themes/dark";
+@use "../assets/themes/light";
+
+// 7️⃣ Import des utilitaires
+@use "../assets/utils/accessibility";
+@use "../assets/utils/animations";
+@use "../assets/utils/helpers";
+@use "../assets/utils/spacing";
+@use "../assets/utils/visibility";

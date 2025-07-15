@@ -1,0 +1,49 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+
+body {
+    background-color: $background-color;
+}
+
+img {
+    width: 100%;
+}
+
+h1{
+    color: $danger-color;
+    font-size: 4rem;
+}
+
+h2{
+    color: $primary-color;
+}
+
+h3{
+    color: $primary-color;
+    text-transform: capitalize;
+}
+
+p{
+    color: $primary-color;
+}
+
+.row{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.creation-pizza{
+    width: 65%;
+    @include d-flex-column;
+    gap: 2rem;
+}
+
+
+
+section{
+    width: 90%;
+    margin: auto;
+}

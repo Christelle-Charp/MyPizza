@@ -1,0 +1,31 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+
+.card-base{
+    @include d-flex-column;
+    width: 40%;
+    gap: 1.5rem;
+    border: 2px solid $secondary-color;
+    border-radius: 8px;
+    padding: 1rem;
+
+    .header-card-base{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .body-card-base{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .img-card-base{
+            width: 45%;
+        }
+        .encart{
+            width: 45%;
+        }
+    }
+
+}

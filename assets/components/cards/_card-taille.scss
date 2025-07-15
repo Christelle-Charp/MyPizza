@@ -1,0 +1,23 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+
+.card-taille{
+    @include d-flex-column;
+    width: 30%;
+    gap: 1.5rem;
+    border: 2px solid $secondary-color;
+    border-radius: 8px;
+    padding: 1rem;
+
+    .footer-card-taille{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        .prix{
+            font-weight: bolder;
+        }
+    }
+
+}
