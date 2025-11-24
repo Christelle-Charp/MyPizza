@@ -31,15 +31,6 @@ Ce projet, réalisé dans le cadre d’un exercice, propose une page intégrée 
 
 ---
 
-## 🚀 Accès au site de test
-
-🔗 [cdms-chch.play.mywebecom.ovh](https://mypizza-chch.play.mywebecom.ovh/afficher_creation.php)
-
-👤 **Profils de démonstration** :  
-Aucun profil requis
-
----
-
 ## 📁 Documents disponibles
 
 - 🗂️ Cahier des charges "client"
