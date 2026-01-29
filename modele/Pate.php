@@ -7,6 +7,6 @@ namespace modele;
 
 class Pate extends _api{
     //Décrire l'objet réel: attributs pour décrire l'objet
-    protected static $urlAPI = "https://api.mywebecom.ovh/play/mypizza/pates";
+    protected static $urlAPI = "https://api.christelle-charpinet.fr/mypizza/pate";
     protected $attributs = ["nom", "description"];
 }

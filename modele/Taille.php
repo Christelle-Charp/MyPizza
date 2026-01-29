@@ -7,8 +7,8 @@ namespace modele;
 
 class Taille extends _api{
     //Décrire l'objet réel: attributs pour décrire l'objet
-    protected static $urlAPI = "https://api.mywebecom.ovh/play/mypizza/tailles";
-    protected static $urlAPIPrix = "https://api.mywebecom.ovh/play/mypizza/prix";
+    protected static $urlAPI = "https://api.christelle-charpinet.fr/mypizza/taille";
+    protected static $urlAPIPrix = "https://api.christelle-charpinet.fr/mypizza/prix";
     protected $attributs = ["nom", "description", "prix", "supplement"];
     protected static $prix = null;
 
